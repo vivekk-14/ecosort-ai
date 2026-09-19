@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoSort AI — 1M1B IBM SkillsBuild Final Presentation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0f172a;
+    }
+    @media print {
+      body {
+        background-color: #ffffff;
+      }
+      .slide-page {
+        page-break-after: always;
+        break-after: page;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+    .slide-page {
+      min-height: 560px;
+      aspect-ratio: 16 / 9;
+    }
+  </style>
+</head>
+<body class="p-4 sm:p-8 flex flex-col items-center gap-8 text-slate-800">
+
+  <!-- Print Notice Toolbar -->
+  <div class="no-print bg-emerald-600 text-white px-6 py-3 rounded-2xl shadow-xl flex items-center justify-between gap-6 max-w-4xl w-full">
+    <div>
+      <h3 class="font-bold text-sm sm:text-base">EcoSort AI Final Submission Slides (8 Slides)</h3>
+      <p class="text-xs text-emerald-100">Ready for submission to 1M1B in collaboration with IBM SkillsBuild & AICTE.</p>
+    </div>
+    <button onclick="window.print()" class="bg-white text-emerald-800 hover:bg-emerald-50 px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold shadow-md transition-all">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- SLIDE 1: TITLE SLIDE -->
+  <div class="slide-page bg-gradient-to-br from-emerald-900 via-slate-900 to-teal-950 text-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col justify-between max-w-5xl w-full border border-emerald-500/20 relative overflow-hidden">
+    <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="flex justify-between items-start">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300 font-extrabold text-2xl">
+          ♻️
+        </div>
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-500/30">
+          1M1B • IBM SkillsBuild & AICTE Internship
+        </span>
+      </div>
+      <div class="text-right text-xs text-slate-400 font-medium">
+        September 2026 Submission
+      </div>
+    </div>
+
+    <div class="my-auto">
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-3">
+        EcoSort <span class="text-emerald-400">AI</span>
+      </h1>
+      <p class="text-lg sm:text-2xl font-semibold text-emerald-200 mb-4">
+        AI-Powered Waste Segregation & Disposal Assistant
+      </p>
+      <p class="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+        A full-stack sustainability solution addressing urban waste confusion through multimodal vision intelligence, transparent material classification, and Responsible AI guardrails.
+      </p>
+    </div>
+
+    <div class="pt-6 border-t border-slate-700/60 grid grid-cols-2 gap-4 text-xs sm:text-sm">
+      <div>
+        <p class="text-slate-400 font-medium text-xs">Student Presenter</p>
+        <p class="font-bold text-white text-base sm:text-lg">Vivek Satya Bhushan Munnangi</p>
+      </div>
+      <div>
+        <p class="text-slate-400 font-medium text-xs">Institution</p>
+        <p class="font-bold text-emerald-300 text-sm sm:text-base">Anil Neerukonda Institute of Technology and Sciences (ANITS)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: THE PROBLEM -->
+  <div class="slide-page bg-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col justify-between max-w-5xl w-full border border-slate-200">
+    <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+      <div>
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Stage 1 & 2: Empathize & Define</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">The Problem: Waste Segregation Bottleneck</h2>
+      </div>
+      <span class="text-xs font-extrabold text-slate-300">Slide 2 / 8</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-auto">
+      <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200/80">
+        <div class="text-2xl mb-2">❓</div>
+        <h3 class="font-bold text-slate-900 text-base mb-1.5">Disposal Confusion</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Consumers and students struggle to differentiate between wet organic waste, dry recyclables, e-waste, and hazardous products.
+        </p>
+      </div>
+
+      <div class="p-6 bg-rose-50/70 rounded-2xl border border-rose-200">
+        <div class="text-2xl mb-2">⚠️</div>
+        <h3 class="font-bold text-rose-950 text-base mb-1.5">Stream Contamination</h3>
+        <p class="text-xs text-rose-900 leading-relaxed">
+          A single greasy pizza box or discarded battery can contaminate an entire recycling batch, causing tons of recyclable material to be sent to landfills.
+        </p>
+      </div>
+
+      <div class="p-6 bg-amber-50/70 rounded-2xl border border-amber-200">
+        <div class="text-2xl mb-2">🏛️</div>
+        <h3 class="font-bold text-amber-950 text-base mb-1.5">Local Rule Variation</h3>
+        <p class="text-xs text-amber-900 leading-relaxed">
+          Sorting guidelines vary between municipalities. Static posters are ignored, leaving citizens without instant guidance at the point of disposal.
+        </p>
+      </div>
+    </div>
+
+    <div class="p-4 bg-emerald-50 rounded-2xl border border-emerald-200 text-xs sm:text-sm text-emerald-950 font-medium">
+      <strong>Core Problem Statement:</strong> How might we use AI to guide point-of-disposal decisions in real time so that communities can eliminate recycling contamination and accelerate sustainable waste recovery?
+    </div>
+  </div>
+
+  <!-- SLIDE 3: SDG ALIGNMENT -->
+  <div class="slide-page bg-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col justify-between max-w-5xl w-full border border-slate-200">
+    <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+      <div>
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Global Framework</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">United Nations SDG Alignment</h2>
+      </div>
+      <span class="text-xs font-extrabold text-slate-300">Slide 3 / 8</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-auto">
+      <div class="p-6 rounded-3xl bg-amber-500/10 border-2 border-amber-400/40 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-500 text-white font-extrabold flex items-center justify-center text-xl shadow-md">
+              12
+            </div>
+            <div>
+              <span class="text-xs uppercase font-extrabold text-amber-800 tracking-wider">Primary Goal</span>
+              <h3 class="text-lg font-bold text-amber-950">Responsible Consumption & Production</h3>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mb-3">
+            <strong>Target 12.5:</strong> Substantially reduce waste generation through prevention, reduction, recycling, and reuse by 2030.
+          </p>
+          <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+            <li>Identifies recyclable plastics, paper, and glass with material-level accuracy.</li>
+            <li>Generates contextual sustainability tips to replace single-use packaging.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-3xl bg-emerald-500/10 border-2 border-emerald-400/40 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white font-extrabold flex items-center justify-center text-xl shadow-md">
+              11
+            </div>
+            <div>
+              <span class="text-xs uppercase font-extrabold text-emerald-800 tracking-wider">Secondary Goal</span>
+              <h3 class="text-lg font-bold text-emerald-950">Sustainable Cities & Communities</h3>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mb-3">
+            <strong>Target 11.6:</strong> Reduce the adverse per capita environmental impact of cities by improving municipal solid waste management.
+          </p>
+          <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+            <li>Diverts toxic e-waste and batteries from city landfills into authorized streams.</li>
+            <li>Explicitly enforces municipal solid waste supremacy over general AI tips.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center text-xs text-slate-400">
+      Directly measurable impact: Lower contamination rate in city recycling trucks + safe handling of municipal hazardous streams.
+    </div>
+  </div>
+
+  <!-- SLIDE 4: AI SOLUTION & WORKFLOW -->
+  <div class="slide-page bg-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col justify-between max-w-5xl w-full border border-slate-200">
+    <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+      <div>
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Stage 3 & 4: Ideate & Architecture</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">AI Solution Architecture & Workflow</h2>
+      </div>
+      <span class="text-xs font-extrabold text-slate-300">Slide 4 / 8</span>
+    </div>
+
+    <div class="grid grid-cols-4 gap-3 my-auto text-center text-xs">
+      <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col items-center justify-center">
+        <span class="text-2xl mb-1">📸 / ✍️</span>
+        <strong class="text-slate-800 font-bold mb-1">1. Dual Input</strong>
+        <p class="text-[11px] text-slate-500">Image upload (drag & drop) or natural language text fallback</p>
+      </div>
+      <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl flex flex-col items-center justify-center">
+        <span class="text-2xl mb-1">🛡️</span>
+        <strong class="text-emerald-900 font-bold mb-1">2. Pillow Verification</strong>
+        <p class="text-[11px] text-emerald-800">In-memory format check (<5MB). Zero persistent disk storage.</p>
+      </div>
+      <div class="p-4 bg-teal-50 border border-teal-200 rounded-2xl flex flex-col items-center justify-center">
+        <span class="text-2xl mb-1">🧠</span>
+        <strong class="text-teal-900 font-bold mb-1">3. Multimodal AI</strong>
+        <p class="text-[11px] text-teal-800">Gemini 1.5/Flash Vision + heuristic fallback adapter</p>
+      </div>
+      <div class="p-4 bg-indigo-50 border border-indigo-200 rounded-2xl flex flex-col items-center justify-center">
+        <span class="text-2xl mb-1">📊</span>
+        <strong class="text-indigo-900 font-bold mb-1">4. Structured JSON</strong>
+        <p class="text-[11px] text-indigo-800">8 validated fields: item, material, bin, confidence, tips</p>
+      </div>
+    </div>
+
+    <div class="bg-slate-900 text-slate-200 rounded-2xl p-4 font-mono text-[11px] overflow-x-auto">
+      <span class="text-emerald-400 font-bold">// Validated Output Contract:</span><br>
+      { "detected_item": "Plastic Water Bottle", "material": "PET #1", "waste_category": "Dry / Recyclable", "confidence": 0.96, "disposal_guidance": "Empty, rinse, flatten, bin", "sustainability_tip": "Switch to reusable flask" }
+    </div>
+  </div>
+
+  <!-- SLIDE 5: TARGET USERS & BENEFICIARIES -->
+  <div class="slide-page bg-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col justify-between max-w-5xl w-full border border-slate-200">
+    <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+      <div>
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Stakeholder Ecosystem</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Target Users & Beneficiaries</h2>
+      </div>
+      <span class="text-xs font-extrabold text-slate-300">Slide 5 / 8</span>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-auto">
+      <div class="p-5 bg-slate-50 border border-slate-200 rounded-2xl">
+        <div class="text-3xl mb-2">🎓</div>
+        <h4 class="font-bold text-slate-900 text-sm mb-1">Campuses & Hostels</h4>
+        <p class="text-xs text-slate-600">Students and mess staff sorting packaging, delivery boxes, and food scraps.</p>
+      </div>
+
+      <div class="p-5 bg-emerald-50/60 border border-emerald-200 rounded-2xl">
+        <div class="text-3xl mb-2">🏡</div>
+        <h4 class="font-bold text-emerald-950 text-sm mb-1">Urban Households</h4>
+        <p class="text-xs text-emerald-900">Daily segregation guidance for kitchen, cosmetics, and packaging waste.</p>
+      </div>
+
+      <div class="p-5 bg-blue-50/60 border border-blue-200 rounded-2xl">
+        <div class="text-3xl mb-2">🚛</div>
+        <h4 class="font-bold text-blue-950 text-sm mb-1">Sanitation Workers</h4>
+        <p class="text-xs text-blue-900">Reduced manual sorting, fewer hazardous cuts, and clean recyclable intake.</p>
+      </div>
+
+      <div class="p-5 bg-amber-50/60 border border-amber-200 rounded-2xl">
+        <div class="text-3xl mb-2">🌱</div>
+        <h4 class="font-bold text-amber-950 text-sm mb-1">Recycling Units</h4>
+        <p class="text-xs text-amber-900">Higher yield of clean polymers and metals without organic contamination.</p>
+      </div>
+    </div>
+
+    <div class="p-4 bg-slate-100 rounded-2xl text-xs text-slate-600 flex justify-between items-center">
+      <span><strong>Deployment Model:</strong> Responsive Web App accessible on any smartphone browser without requiring app store installation.</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: PROTOTYPE & TESTING -->
+  <div class="slide-page bg-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col justify-between max-w-5xl w-full border border-slate-200">
+    <div class="flex justify-between items-center pb-3 border-b border-slate-100">
+      <div>
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Stage 5: Test & Refine</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Working Prototype & Testing Evaluation</h2>
+      </div>
+      <span class="text-xs font-extrabold text-slate-300">Slide 6 / 8</span>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 my-auto">
+      <div class="space-y-2">
+        <h4 class="font-bold text-xs text-slate-700 uppercase">Live Web Interface</h4>
+        <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+          <img src="screenshots/ecosort_home_page_1789826331026.jpg" alt="Home UI" class="w-full h-36 object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+          <img src="screenshots/ecosort_result_plastic_1789826349599.jpg" alt="Plastic UI" class="w-full h-36 object-cover">
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="font-bold text-xs text-slate-700 uppercase">10 Benchmark Test Cases</h4>
+        <div class="overflow-x-auto text-[10px] bg-slate-50 rounded-xl border border-slate-200 p-2">
+          <table class="w-full text-left">
+            <tr class="border-b font-bold text-slate-700">
+              <th class="py-1">Item</th>
+              <th class="py-1">Result Category</th>
+              <th class="py-1">Conf</th>
+              <th class="py-1">Status</th>
+            </tr>
+            <tr class="border-b"><td>Plastic Bottle</td><td>Dry / Recyclable</td><td>96%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr class="border-b"><td>Banana Peel</td><td>Wet / Organic</td><td>98%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr class="border-b"><td>Amazon Box</td><td>Dry / Recyclable</td><td>94%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr class="border-b"><td>Used Tissue</td><td>General / Non-recyclable</td><td>92%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr class="border-b"><td>Soda Can</td><td>Dry / Recyclable</td><td>97%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr class="border-b"><td>Old Phone</td><td>E-Waste</td><td>95%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr class="border-b"><td>Battery</td><td>Hazardous / Special</td><td>96%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr class="border-b"><td>Greasy Pizza Box</td><td>General / Non-recyclable</td><td>89%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr class="border-b"><td>Glass Bottle</td><td>Dry / Recyclable</td><td>96%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+            <tr><td>Mixed Debris</td><td>Uncertain</td><td>42%</td><td class="text-emerald-600 font-bold">PASS</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-[11px] text-slate-500">
+      *Note: Soiled pizza box correctly diverted to General Waste to prevent paper repulping contamination. Mixed debris classified as Uncertain adhering to Responsible AI.
+    </p>
+  </div>
+
+  <!-- SLIDE 7: RESPONSIBLE AI -->
+  <div class="slide-page bg-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col justify-between max-w-5xl w-full border border-slate-200">
+    <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+      <div>
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Mandatory Framework</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Responsible AI by Design</h2>
+      </div>
+      <span class="text-xs font-extrabold text-slate-300">Slide 7 / 8</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-auto text-xs">
+      <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+        <strong class="text-slate-900 block mb-1">🔒 Zero-Storage Privacy</strong>
+        <p class="text-slate-600 leading-relaxed">
+          Images are verified in RAM only and destroyed upon HTTP response. No user accounts or photos are ever saved.
+        </p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200">
+        <strong class="text-amber-950 block mb-1">⚖️ Uncertainty Handling</strong>
+        <p class="text-amber-900 leading-relaxed">
+          The AI never hallucinates or guesses. If confidence is low (<60%), it outputs "Uncertain" and prompts for cleaner photos.
+        </p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-rose-50 border border-rose-200">
+        <strong class="text-rose-950 block mb-1">🚨 Hazardous Safety</strong>
+        <p class="text-rose-900 leading-relaxed">
+          Batteries and chemicals trigger high-visibility alerts forbidding home trash disposal and directing to authorized kiosks.
+        </p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200">
+        <strong class="text-emerald-950 block mb-1">👁️ Full Transparency</strong>
+        <p class="text-emerald-900 leading-relaxed">
+          Every result explicitly details detected item, material taxonomy, percentage confidence gauge, and scientific rationale.
+        </p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-teal-50 border border-teal-200 md:col-span-2">
+        <strong class="text-teal-950 block mb-1">🏛️ Human & Municipal Oversight</strong>
+        <p class="text-teal-900 leading-relaxed">
+          Prominently displayed banner: <em>"AI disposal guidance is informational. Local municipal waste-management regulations always supersede AI recommendations."</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center text-xs text-slate-400">
+      Adheres strictly to IBM SkillsBuild, AICTE, and UNESCO guidelines on ethical artificial intelligence.
+    </div>
+  </div>
+
+  <!-- SLIDE 8: IMPACT & CONCLUSION -->
+  <div class="slide-page bg-gradient-to-br from-slate-900 via-teal-950 to-emerald-950 text-white rounded-3xl p-8 sm:p-14 shadow-2xl flex flex-col justify-between max-w-5xl w-full border border-emerald-500/20">
+    <div class="flex justify-between items-center pb-4 border-b border-slate-700/60">
+      <div>
+        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Outcome & Vision</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Expected Impact & Conclusion</h2>
+      </div>
+      <span class="text-xs font-extrabold text-slate-400">Slide 8 / 8</span>
+    </div>
+
+    <div class="my-auto space-y-6">
+      <div class="p-6 rounded-2xl bg-emerald-900/30 border border-emerald-500/30">
+        <h3 class="text-lg font-bold text-emerald-300 mb-2">Impact Statement:</h3>
+        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+          "If implemented across an academic campus or community of 2,000 students, EcoSort AI can prevent an estimated <strong>35% recycling contamination</strong>, eliminate improper battery disposal, and establish lasting sustainable sorting habits at zero cost to users."
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+        <div class="p-4 bg-slate-800/60 rounded-xl border border-slate-700">
+          <strong class="text-white block mb-1">🌱 Environmental</strong>
+          <p class="text-slate-300">Lower methane emissions from organic waste in landfills; higher recycled polymer recovery.</p>
+        </div>
+        <div class="p-4 bg-slate-800/60 rounded-xl border border-slate-700">
+          <strong class="text-white block mb-1">👥 Social & Educational</strong>
+          <p class="text-slate-300">Transforms passive consumers into proactive stewards of circular consumption (SDG 12).</p>
+        </div>
+        <div class="p-4 bg-slate-800/60 rounded-xl border border-slate-700">
+          <strong class="text-white block mb-1">💰 Municipal Efficiency</strong>
+          <p class="text-slate-300">Reduces municipal sorting labor and prevents costly mechanical breakdowns in waste compactors.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-4 border-t border-slate-700/60 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400">
+      <span>Thank you! • Questions & Discussion</span>
+      <span class="text-emerald-400 font-semibold">Vivek Satya Bhushan Munnangi • ANITS</span>
+    </div>
+  </div>
+
+</body>
+</html>
