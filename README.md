@@ -2,7 +2,7 @@
 
 > **1M1B AI for Sustainability Virtual Internship Project**  
 > **In Collaboration with:** IBM SkillsBuild & AICTE  
-> **Student Name:** Vivek Satya Bhushan Munnangi  
+> **Student Name:** Munnangi Vivek Satya Bhushan  
 > **Institution:** Anil Neerukonda Institute of Technology and Sciences (ANITS)  
 > **Submission Deadline:** September 21, 2026  
 > **Primary SDG:** SDG 12 — Responsible Consumption and Production  
