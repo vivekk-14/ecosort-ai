@@ -6,7 +6,8 @@
 > **Institution:** Anil Neerukonda Institute of Technology and Sciences (ANITS)  
 > **Submission Deadline:** September 21, 2026  
 > **Primary SDG:** SDG 12 — Responsible Consumption and Production  
-> **Secondary SDG:** SDG 11 — Sustainable Cities and Communities  
+> **Secondary SDG:** SDG 11 — Sustainable Cities and Communities
+> 📁 **Demo video and presentation (Google Drive):** [Open folder](https://drive.google.com/drive/folders/1DTb-drhItIDgeZg6skY95jUFS4K1WTaM?usp=drive_link) 
 
 ---
 
